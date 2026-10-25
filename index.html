@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hearth Hub</title>
+<style>
+  :root { --ground:#F6F7F5; --ink:#1B2430; --muted:#5B6573; --rule:#E2E5E1; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --ground:#12161B; --ink:#EDF0F3; --muted:#9AA4B1; --rule:#272E36; }
+  }
+  :root[data-theme="dark"] { --ground:#12161B; --ink:#EDF0F3; --muted:#9AA4B1; --rule:#272E36; }
+  * { box-sizing: border-box; }
+  body {
+    margin:0; background:var(--ground); color:var(--ink);
+    font:16px/1.65 ui-sans-serif, -apple-system, "Segoe UI", system-ui, sans-serif;
+    padding:72px 16px;
+  }
+  main { max-width:34rem; margin:0 auto; }
+  h1 { font-size:1.6rem; margin:0 0 .25rem; letter-spacing:-0.01em; }
+  .sub { color:var(--muted); margin:0 0 2.5rem; }
+  h2 { font-size:1rem; margin:2.5rem 0 .5rem; }
+  p { margin:0 0 1rem; }
+  ul { margin:0 0 1rem; padding-left:1.2rem; }
+  li { margin:.3rem 0; }
+  a { color:inherit; text-underline-offset:3px; }
+  footer { margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--rule); color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Hearth Hub</h1>
+  <p class="sub">A private family calendar display.</p>
+
+  <p>Hearth Hub is a personal project. It reads its owner's own Google Calendar
+  events and shows them on a wall-mounted screen in his home, alongside local
+  weather and a view of the town square.</p>
+
+  <p>It is not a product, it is not offered to anyone else, and it has exactly
+  one user.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Reads events from calendars the owner's own Google account can already see</li>
+    <li>Shows the times and the day's shape on a screen at home</li>
+    <li>Nothing is published, shared, sold or sent anywhere else</li>
+  </ul>
+
+  <h2>Access it uses</h2>
+  <p>Read-only. The single permission requested is
+  <code>calendar.events.readonly</code>. It cannot create, change or delete
+  anything on any calendar.</p>
+
+  <footer>
+    <a href="./privacy.html">Privacy policy</a> &middot;
+    <a href="./terms.html">Terms of service</a>
+  </footer>
+</main>
+</body>
+</html>

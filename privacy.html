@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hearth Hub — Privacy Policy</title>
+<style>
+  :root { --ground:#F6F7F5; --ink:#1B2430; --muted:#5B6573; --rule:#E2E5E1; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --ground:#12161B; --ink:#EDF0F3; --muted:#9AA4B1; --rule:#272E36; }
+  }
+  :root[data-theme="dark"] { --ground:#12161B; --ink:#EDF0F3; --muted:#9AA4B1; --rule:#272E36; }
+  * { box-sizing: border-box; }
+  body {
+    margin:0; background:var(--ground); color:var(--ink);
+    font:16px/1.65 ui-sans-serif, -apple-system, "Segoe UI", system-ui, sans-serif;
+    padding:72px 16px;
+  }
+  main { max-width:34rem; margin:0 auto; }
+  h1 { font-size:1.5rem; margin:0 0 .25rem; letter-spacing:-0.01em; }
+  .sub { color:var(--muted); margin:0 0 2.5rem; font-size:.95rem; }
+  h2 { font-size:1rem; margin:2.25rem 0 .5rem; }
+  p { margin:0 0 1rem; }
+  ul { margin:0 0 1rem; padding-left:1.2rem; }
+  li { margin:.3rem 0; }
+  a { color:inherit; text-underline-offset:3px; }
+  footer { margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--rule); color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="sub">Hearth Hub &middot; last updated 25 October 2026</p>
+
+  <p>Hearth Hub is a personal, single-user application. It is operated by its
+  owner for his own household and is not offered to the public.</p>
+
+  <h2>What it accesses</h2>
+  <p>With the owner's explicit consent, Hearth Hub requests one Google
+  permission, <code>calendar.events.readonly</code>. This is read-only. The
+  application cannot create, modify or delete any calendar or event.</p>
+  <p>It reads only from a fixed list of calendars written into its own
+  configuration. It does not browse or enumerate other calendars.</p>
+
+  <h2>What it stores</h2>
+  <p>A short-lived copy of upcoming events, covering about seven days ahead,
+  is cached so the display does not have to query Google continuously. The
+  cache holds start and end times, whether an event lasts all day, and which
+  calendar it came from. By default, event titles are replaced with the word
+  "Busy" before anything is stored.</p>
+  <p>The cache is overwritten on every refresh and expires automatically.</p>
+
+  <h2>Where it goes</h2>
+  <p>To one screen, in the owner's home, on his own network. Nothing is
+  shared with, sold to, or transmitted to any third party. There is no
+  analytics, no advertising, no tracking, and no other user.</p>
+
+  <h2>Credentials</h2>
+  <p>The Google credential is held server-side as an encrypted secret. It is
+  never included in any web page, never sent to the display, and never
+  written to logs.</p>
+
+  <h2>Retention and deletion</h2>
+  <p>Cached events are transient and are replaced or expired automatically.
+  Access can be withdrawn at any time by the owner at
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>,
+  which immediately and permanently ends all access. No copy of the data
+  survives in any other system.</p>
+
+  <h2>Limited Use</h2>
+  <p>Hearth Hub's use of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including the Limited Use requirements.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy can be sent to the address listed as the
+  developer contact on the application's Google consent screen.</p>
+
+  <footer><a href="./index.html">Back to Hearth Hub</a></footer>
+</main>
+</body>
+</html>
